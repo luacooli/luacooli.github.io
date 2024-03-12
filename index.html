@@ -1,50 +1,125 @@
 <!DOCTYPE html>
 <html>
-<meta http-equiv="Content Type" content="text/html" ; charset="utf-8">
+  <head>
+    <meta http-equiv="Content Type" content="text/html" ; charset="utf-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Luana Correia</title>
+  </head>
 
-<body>
-  <h1 style="text-align: center;">Welcome to my page 👋🏽</h1>
+  <body>
+    <main class="p-10">
+      <header class="text-center">
+        <h1 class="text-4xl text-stone-600 font-bold p-8">
+          Welcome to my page 👋🏽
+        </h1>
 
-  <section>
-    <h2>About me 🙃</h2>
+        <div class="flex justify-center">
+          <img
+            src="./images/eu.png"
+            class="rounded-full border-4 border-stone-900 p-3 my-6"
+            alt="Headshot of Luana Correia"
+          />
+        </div>
 
-    <p>Hi, my name is Luana Correia and I'm a fullstack developer</p>
-    <p>While I'm not coding sometimes I'm playing soccer ⚽ or volleyball 🏐 or even doing some workouts to keep my shape. When I'm on the mood I like to play ukulele 🎸 songs and sing like I'm in the shower 🎙️. And between this all events I'm cuddling with my cat 😽</p>
-  </section>
+        <h2 class="text-2xl text-stone-400 font-bold my-3">
+          Full-Stack Developer
+        </h2>
+      </header>
 
-  <section>
-    <h2>Currently</h2>
+      <section class="text-center flex justify-center my-6">
+        <article class="max-w-3xl border-2 rounded-md shadow-md p-3">
+          <h2 class="text-xl text-gray-500 font-semibold">About me...</h2>
 
-    <h3>woring on...</h3>
-    <ul>
-      <li>porfifólio</li>
-      <li>currículo</li>
-    </ul>
+          <p class="text-base my-3">
+            Hi, my name is Luana Correia and I'm a Full-Stack developer
+          </p>
 
-    <h3>learning</h3>
-    <ul>
-      <li>react</li>
-      <li>node.js</li>
-      <li>typescript</li>
-    </ul>
+          <p class="text-base">
+            When I'm not coding, you might find me on the soccer field ⚽ or
+            volleyball court 🏐, or squeezing in a workout to stay fit.
+            Occasionally, I enjoy strumming some tunes on my ukulele 🎸 and
+            belting out songs as if I'm in the shower 🎙️. And amidst all these
+            activities, you'll often catch me cuddling with my cat 😽.
+          </p>
+        </article>
+      </section>
 
-    <h3>reading</h3>
-    <ul>
-      <li>Drogas: a história do proibicionismo</li>
-      <li>Sapiens: os pilares da civilização</li>
-    </ul>
-  </section>
+      <section class="grid divide-y">
+        <h2 class="text-2xl text-gray-500 font-bold p-2">Currently</h2>
 
-  <section>
-    <h2>Links</h2>
+        <article class="py-3">
+          <h3 class="text-l text-stone-400 font-semibold my-2">
+            👩🏽‍💻 Woring on...
+          </h3>
+          <ul class="list-disc">
+            <li class="ml-6 text-sm">Build my portfolio</li>
+            <li class="ml-6 text-sm">Finishing a node course from udemy</li>
+            <li class="ml-6 text-sm">Looking for a react one from udemy too</li>
+            <li class="ml-6 text-sm">Improving my Vue.js skills</li>
+          </ul>
+        </article>
 
-    <a href="https://www.linkedin.com/in/lua-correia"/>LinkedIn</a>
-    <a href="https://github.com/luacooli?tab=repositories"/>Github</a>
-    
-    <p>Contact me by: luacooli@gmail.com</p>
-  </section>
+        <article class="py-3">
+          <h3 class="text-l text-stone-400 font-semibold my-2">
+            🧠 Learning/diving further into...
+          </h3>
+          <ul class="list-disc">
+            <li class="ml-6 text-sm">React</li>
+            <li class="ml-6 text-sm">Typescript</li>
+            <li class="ml-6 text-sm">Flutter</li>
+            <li class="ml-6 text-sm">Cypress tests</li>
+          </ul>
+        </article>
 
+        <article>
+          <h3 class="text-l text-stone-400 font-semibold my-2">📖 Reading</h3>
+          <ul class="list-disc">
+            <li class="ml-6 text-sm">The Secret</li>
+            <li class="ml-6 text-sm">TAO - Lao Tzu</li>
+            <li class="ml-6 text-sm">Sapiens: os pilares da civilização</li>
+          </ul>
+        </article>
+      </section>
 
-</body>
+      <section class="text-center flex justify-center my-4">
+        <article class="p-6 max-w-xl rounded-md bg-stone-300/50 shadow-lg my-6">
+          <h2 class="text-2xl text-gray-500 font-bold mb-6">🔗 Links</h2>
 
+          <div class="flex justify-center my-2">
+            <a
+              href="https://www.linkedin.com/in/lua-correia"
+              target="_blank"
+              class="p-1 flex transition ease-in-out mr-4 hover:scale-110 duration-300"
+            >
+              <img
+                src="./images/linkedin.png"
+                class="w-6 mr-2"
+                alt="LinkedIn icon"
+              />
+              LinkedIn
+            </a>
+
+            <a
+              href="https://github.com/luacooli?tab=repositories"
+              target="_blank"
+              class="p-1 flex transition ease-in-out hover:scale-110 duration-300"
+            >
+              <img
+                src="./images/github.png"
+                class="w-6 mr-2"
+                alt="Github icon"
+              />
+              Github
+            </a>
+          </div>
+
+          <p>
+            contact me via:
+            <a href="mailto:luacooli@gmail.com">luacooli@gmail.com</a>
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
